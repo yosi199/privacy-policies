@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy – Plugin Space</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    h1 { font-size: 1.8em; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy for Plugin Space</h1>
+  <p><strong>Effective Date:</strong> July 2, 2025</p>
+
+  <p>Plugin Space is a macOS application developed to help users scan, organize, and manage plugin files on their system. This Privacy Policy explains how we collect, use, and protect your information.</p>
+
+  <h2>Information We Collect</h2>
+  <p><strong>1. Crash Reports & Analytics</strong><br>
+    We use Firebase Crashlytics and Firebase Analytics to collect anonymous usage data and crash reports. This helps us understand how the app is used and identify issues to improve stability and performance. Firebase may collect device type, operating system version, app version, and anonymized identifiers. No personally identifiable information (PII) is collected through these tools.</p>
+
+  <p><strong>2. Plugin Metadata</strong><br>
+    Plugin Space uploads anonymized plugin metadata (e.g., plugin name, version, file type, and system location) to our private server. This information helps us maintain and enhance plugin compatibility, support features like duplicate detection, and provide update suggestions. The data does not include user-created content, personal files, or identifying information.</p>
+
+  <h2>How We Use the Information</h2>
+  <ul>
+    <li>To improve app stability and usability through crash analytics</li>
+    <li>To better understand how users interact with features</li>
+    <li>To support plugin compatibility and metadata services</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>Plugin Space integrates with Firebase (by Google) for analytics and crash reporting. Firebase may collect and process data as described in its <a href="https://firebase.google.com/support/privacy" target="_blank">Privacy Policy</a>.</p>
+
+  <h2>Data Security</h2>
+  <p>We take reasonable measures to protect the data collected by Plugin Space. All transmitted plugin metadata is sent over secure, encrypted connections (HTTPS). No personal data or documents are transmitted or stored.</p>
+
+  <h2>Your Privacy Choices</h2>
+  <p>You may disable analytics and crash reporting from within the app settings at any time. This will stop Plugin Space from sending data to Firebase services.</p>
+
+  <h2>Contact Us</h2>
+  <p>If you have any questions about this Privacy Policy or our data practices, you may contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:yosimizrachi7@gmail.com">yosimizrachi7@gmail.com</a></p>
+
+  <p>By using Plugin Space, you agree to this privacy policy and the data practices described herein.</p>
+</body>
+</html>
