@@ -32,62 +32,72 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: January 28, 2026</p>
+    <p class="last-updated">Last updated: October 11, 2026</p>
 
     <p>Thank you for using MetadataRemover. We built this app with privacy as our core principle.</p>
 
     <div class="highlight-box">
-        <strong>Our Promise:</strong> Your photos never leave your device. All metadata processing happens entirely on your iPhone. We cannot see, access, or store your photos.
+        <strong>Our Promise:</strong> Your photos never leave your device. All metadata reading and removal happens entirely on your iPhone. We never receive, see, or store your photos, their metadata, or anything written in them.
     </div>
 
     <h2>Information We Collect</h2>
-    <p><strong>We do not collect any personal information or photo data.</strong></p>
-    <p>MetadataRemover is designed to protect your privacy. The app:</p>
-    <ul>
-        <li>Does not upload your photos to any server</li>
-        <li>Does not collect personal data</li>
-        <li>Does not track your location</li>
-        <li>Does not use analytics or tracking services</li>
-        <li>Does not share any data with third parties</li>
-        <li>Does not require an account or login</li>
-    </ul>
+    <p><strong>We never collect your photos, videos, or their metadata</strong> (locations, names, dates, camera details, captions, AI prompts, or file names).</p>
+    <p>To improve the app, MetadataRemover sends <strong>anonymous usage statistics</strong> (see Usage Analytics below). You can turn these off at any time. The app does not require an account or login, does not show ads, and does not track you across other apps or websites.</p>
 
     <h2>Photo Processing</h2>
-    <p>All photo metadata reading and removal is performed locally on your device using Apple's native ImageIO framework. Your photos are processed in memory and are never transmitted over the internet.</p>
+    <p>All photo and video metadata reading and removal is performed locally on your device using Apple's native frameworks (ImageIO and AVFoundation). Your photos are processed in memory or in temporary files that the app deletes, and are never transmitted over the internet by the app.</p>
+
+    <h2>Photo Library Access</h2>
+    <p>The app requests permission to access your Photo Library. This access is used to:</p>
+    <ul>
+        <li>Read photos and videos you select for metadata viewing, removal, or editing</li>
+        <li>Save cleaned copies back to your library (when you choose to save)</li>
+        <li>Delete originals, only when you ask (iOS always asks you to confirm)</li>
+        <li>Scan your library for photos that reveal private information, if you use <strong>Scan My Library</strong>. The scan runs on your device and its results are stored only on your device.</li>
+    </ul>
+    <p>You can change or revoke this permission at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; MetadataRemover.</p>
+
+    <h2>Place Names and Maps</h2>
+    <p>When a photo contains a location, the app can show a nearby place name and a map. To do this, the photo's coordinates are sent to <strong>Apple Maps</strong>, a service provided by Apple under Apple's privacy policy. When you search for a place while editing a photo's location, your search text is sent to Apple Maps as well. No photo or other metadata is sent. Without an internet connection, the app works without place names.</p>
+
+    <h2>Usage Analytics</h2>
+    <p>To understand which features are used and how the subscription offer performs, the app sends anonymous usage events to <strong>Google Analytics for Firebase</strong>, for example "a photo was cleaned", "the library scan finished", or "the subscription screen was shown". These events:</p>
+    <ul>
+        <li><strong>Never include</strong> your photos, their contents, or any metadata values</li>
+        <li>Are tied to a random app-instance identifier created by Firebase, not to your name, email, or Apple ID</li>
+        <li>Are not used for advertising or to track you across other apps and websites. The app does not use the advertising identifier and never asks to track you.</li>
+        <li>Include basic information Firebase collects automatically, such as device model, iOS version, app version, country, and language</li>
+    </ul>
+    <p><strong>You can turn analytics off</strong> at any time in Settings &gt; MetadataRemover &gt; Share Anonymous Usage Data. Google's handling of this data is described at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
 
     <h2>Data Stored on Your Device</h2>
-    <p>The app stores minimal data locally on your device:</p>
+    <p>The app stores the following locally on your device:</p>
     <ul>
         <li><strong>Usage counter:</strong> Tracks daily free tier usage (resets daily)</li>
         <li><strong>Subscription status:</strong> Managed by Apple's StoreKit</li>
-        <li><strong>Preferences:</strong> App settings and language preference</li>
+        <li><strong>Preferences:</strong> Your "What to remove" choices, saved presets, and app settings</li>
+        <li><strong>Library scan results:</strong> Which photos reveal private information, so the scan doesn't start over</li>
     </ul>
-    <p>This data never leaves your device and is deleted when you uninstall the app.</p>
+    <p>This data stays on your device, is shared only between the app and its Share Extension, and is deleted when you uninstall the app.</p>
+
+    <h2>Share Extension and Shortcuts</h2>
+    <p>Cleaning photos from the Share sheet or with Shortcuts works the same way: on your device, without uploading anything. These features record anonymous usage events on your device, which the app sends the next time you open it (subject to the analytics setting above).</p>
 
     <h2>Subscriptions</h2>
-    <p>Premium subscriptions are processed entirely through Apple's App Store. We do not have access to your payment information. Subscription management is handled by Apple in your device Settings.</p>
+    <p>Premium subscriptions and purchases are processed entirely through Apple's App Store. We do not have access to your payment information. Anonymous analytics record that the subscription screen was shown or that a purchase was completed, without any personal or payment details. Subscription management is handled by Apple in your device Settings.</p>
 
     <h2>Third-Party Services</h2>
-    <p>MetadataRemover does not integrate with any third-party analytics, advertising, or tracking services. We use only Apple's native frameworks:</p>
     <ul>
-        <li><strong>StoreKit:</strong> For in-app purchases (managed by Apple)</li>
-        <li><strong>PhotoKit:</strong> For accessing photos you select (with your permission)</li>
-        <li><strong>ImageIO:</strong> For reading and removing metadata locally</li>
+        <li><strong>Apple:</strong> App Store and StoreKit (purchases), PhotoKit (photo access, with your permission), Apple Maps (place names and place search)</li>
+        <li><strong>Google Analytics for Firebase:</strong> Anonymous usage analytics, as described above</li>
     </ul>
-
-    <h2>Photo Library Access</h2>
-    <p>The app requests permission to access your Photo Library. This access is used solely to:</p>
-    <ul>
-        <li>Read photos you select for metadata viewing/removal</li>
-        <li>Save cleaned photos back to your library (when you choose to save)</li>
-    </ul>
-    <p>You can revoke this permission at any time in Settings > MetadataRemover.</p>
+    <p>We do not use advertising networks or sell or share data with data brokers.</p>
 
     <h2>Children's Privacy</h2>
-    <p>Our app does not collect personal information from anyone, including children under 13. The app is rated 4+ and is safe for all ages.</p>
+    <p>The app is rated 4+ and does not knowingly collect personal information from anyone, including children under 13. Usage analytics are anonymous, as described above.</p>
 
     <h2>Data Security</h2>
-    <p>Since we don't collect or transmit your data, there is no risk of data breaches affecting your photos or personal information through our app.</p>
+    <p>Your photos and their metadata are never transmitted by the app, so they cannot be exposed through any server of ours. Anonymous analytics are sent over encrypted connections.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
