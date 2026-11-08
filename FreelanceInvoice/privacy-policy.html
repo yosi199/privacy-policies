@@ -49,6 +49,7 @@
 
     <h2>No Account Needed</h2>
     <p>Freelance Invoice does not ask you to register or log in. On first launch, the app creates an <strong>anonymous account</strong> with Google Firebase Authentication. This account is identified only by a random user ID; it does not contain your name, email address or Apple ID.</p>
+    <p><strong>Optional sign-in.</strong> In Settings › Account you can connect this account to <strong>Sign in with Apple</strong> or <strong>Google</strong>, so your invoices, clients and invoice credits come back after a reinstall and on your other devices. Firebase Authentication then also stores your e-mail address (Apple lets you hide it behind a relay address) and, for Google accounts, the name and profile picture Google provides. We use them only for signing in.</p>
 
     <h2>Information You Enter</h2>
     <p>To create invoices, you enter information into the app, and the app stores it so you can use it again:</p>
@@ -64,7 +65,8 @@
     <p>When you send an invoice or estimate, the app creates a PDF on your device and opens the system share sheet or Mail. The invoice is sent by the app or service you choose (for example Mail or Messages), not through our servers.</p>
 
     <h2>Purchases</h2>
-    <p>Invoice packs and the Unlimited subscription are sold and processed by <strong>Apple</strong> through the App Store. We never see your payment information. The app stores how many invoice credits you have under your anonymous account, and checks your subscription status with Apple's StoreKit.</p>
+    <p>Invoice packs and the Unlimited subscription are sold and processed by <strong>Apple</strong> through the App Store. We never see your payment information. The app stores how many invoice credits you have under your account, and checks your subscription status with Apple's StoreKit.</p>
+    <p>Purchases are also recorded by <strong>RevenueCat</strong> (RevenueCat, Inc.), which processes them on our behalf. RevenueCat receives the App Store purchase receipt, your account's user ID and basic device details (model, iOS version, app version, store country). It is used only to verify purchases, make an Unlimited subscription available on your other devices when you sign in, and for sales reports. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></p>
 
     <h2>Usage Analytics and Crash Reports</h2>
     <p>To understand how the app is used and to fix problems, the app uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>:</p>
@@ -89,7 +91,8 @@
     <h2>Third-Party Services</h2>
     <ul>
         <li><strong>Apple:</strong> App Store and StoreKit (purchases and subscriptions), Mail and the share sheet (sending documents)</li>
-        <li><strong>Google Firebase:</strong> Authentication (anonymous account), Cloud Firestore (storing your data), Analytics (usage events) and Crashlytics (crash reports)</li>
+        <li><strong>Google Firebase:</strong> Authentication (anonymous account, and Sign in with Apple or Google if you choose it), Cloud Firestore (storing your data), Analytics (usage events) and Crashlytics (crash reports)</li>
+        <li><strong>RevenueCat:</strong> Purchase records, as described above</li>
     </ul>
     <p>We do not use advertising networks and do not sell or share data with data brokers.</p>
 
@@ -97,7 +100,8 @@
     <p>Your data is kept for as long as your account exists, so that it stays available in the app. When you delete an invoice, client or item in the app, it is deleted from the cloud as well.</p>
 
     <h2>Deleting Your Data</h2>
-    <p>To have all data stored under your account deleted, email us at <a href="mailto:com.loop.to.infinity@gmail.com">com.loop.to.infinity@gmail.com</a> with the subject "Delete my data". We will reply to confirm which account it is and delete it within 30 days.</p>
+    <p>If you signed in with Apple or Google, you can delete your account in the app: Settings › Account › Delete Account. Your invoices, clients, saved items and company information are deleted, then the account; for Apple accounts the permission you gave Freelance Invoice is revoked. Records of purchased and used invoice credits and your invoice-number counter are kept so credits can't be reused, and are no longer linked to a sign-in. Purchases are not refunded; an Unlimited subscription stays restorable on your Apple Account.</p>
+    <p>You can also ask by e-mail. To have all data stored under your account deleted, email us at <a href="mailto:com.loop.to.infinity@gmail.com">com.loop.to.infinity@gmail.com</a> with the subject "Delete my data". We will reply to confirm which account it is and delete it within 30 days.</p>
 
     <h2>Your Rights</h2>
     <p>Depending on where you live (for example under the GDPR or the CCPA), you may have the right to access, correct, export or delete your personal data, and to object to its use. Most of your data can be viewed, edited and deleted directly in the app. For anything else, contact us at the address below.</p>
