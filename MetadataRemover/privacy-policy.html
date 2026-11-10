@@ -32,81 +32,121 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: October 11, 2026</p>
+    <!-- TODO-AT-SUBMISSION: replace the date below with the day this page is published (1.2.0 submission) -->
+    <p class="last-updated">Last updated: [SET AT 1.2.0 SUBMISSION]</p>
 
     <p>Thank you for using MetadataRemover. We built this app with privacy as our core principle.</p>
 
     <div class="highlight-box">
-        <strong>Our Promise:</strong> Your photos never leave your device. All metadata reading and removal happens entirely on your iPhone. We never receive, see, or store your photos, their metadata, or anything written in them.
+        <strong>Our Promise:</strong> Your photos never leave your device. All metadata reading and removal happens entirely on your iPhone, iPad or Mac. We never receive, see, or store your photos or videos, their metadata, or anything written in them.
     </div>
 
     <h2>Information We Collect</h2>
     <p><strong>We never collect your photos, videos, or their metadata</strong> (locations, names, dates, camera details, captions, AI prompts, or file names).</p>
-    <p>To improve the app, MetadataRemover sends <strong>anonymous usage statistics</strong> (see Usage Analytics below). You can turn these off at any time. An account is optional (see Optional Account below); the app works fully without one. The app does not show ads, and does not track you across other apps or websites.</p>
+    <p>The app sends <strong>usage statistics and crash reports</strong> (you can turn both off), and <strong>purchase information</strong> to the service that keeps Premium active. <strong>An account is optional</strong>: the app works fully without one. If you choose to sign in, your account ID, e-mail address and (for Google accounts) name are stored so Premium can follow you to your other devices. The app does not show ads and does not track you across other apps or websites.</p>
 
-    <h2>Photo Processing</h2>
+    <h2>Photo and File Processing</h2>
     <p>All photo and video metadata reading and removal is performed locally on your device using Apple's native frameworks (ImageIO and AVFoundation). Your photos are processed in memory or in temporary files that the app deletes, and are never transmitted over the internet by the app.</p>
+    <p>On iPad and Mac, files you open or drop into the app are read on your device. Cleaned copies are saved as new files where you choose; originals are never changed. On the Mac, originals are moved to the Trash only if you turn that on.</p>
 
     <h2>Photo Library Access</h2>
     <p>The app requests permission to access your Photo Library. This access is used to:</p>
     <ul>
         <li>Read photos and videos you select for metadata viewing, removal, or editing</li>
         <li>Save cleaned copies back to your library (when you choose to save)</li>
-        <li>Delete originals, only when you ask (iOS always asks you to confirm)</li>
+        <li>Delete originals, only when you ask (the system always asks you to confirm)</li>
         <li>Scan your library for photos that reveal private information, if you use <strong>Scan My Library</strong>. The scan runs on your device and its results are stored only on your device.</li>
     </ul>
-    <p>You can change or revoke this permission at any time in Settings &gt; Privacy &amp; Security &gt; Photos &gt; MetadataRemover.</p>
+    <p>You can change or revoke this permission at any time: on iPhone and iPad in Settings &gt; Privacy &amp; Security &gt; Photos &gt; MetadataRemover; on the Mac in System Settings &gt; Privacy &amp; Security &gt; Photos.</p>
 
     <h2>Place Names and Maps</h2>
     <p>When a photo contains a location, the app can show a nearby place name and a map. To do this, the photo's coordinates are sent to <strong>Apple Maps</strong>, a service provided by Apple under Apple's privacy policy. When you search for a place while editing a photo's location, your search text is sent to Apple Maps as well. No photo or other metadata is sent. Without an internet connection, the app works without place names.</p>
 
-    <h2>Usage Analytics</h2>
-    <p>To understand which features are used and how the subscription offer performs, the app sends anonymous usage events to <strong>Google Analytics for Firebase</strong>, for example "a photo was cleaned", "the library scan finished", or "the subscription screen was shown". These events:</p>
+    <h2>Usage Analytics (iPhone and iPad)</h2>
+    <p>To understand which features are used and how the subscription offer performs, the app on iPhone and iPad sends usage events to <strong>Google Analytics for Firebase</strong> (Google LLC), for example "a photo was cleaned", "the library scan finished", or "the subscription screen was shown". The Mac app sends no usage analytics. These events:</p>
     <ul>
         <li><strong>Never include</strong> your photos, their contents, or any metadata values</li>
-        <li>Are tied to a random app-instance identifier created by Firebase, not to your name, email, or Apple ID</li>
+        <li>Carry a random app-instance identifier created by Firebase, not your name, e-mail, Apple Account or account ID</li>
         <li>Are not used for advertising or to track you across other apps and websites. The app does not use the advertising identifier and never asks to track you.</li>
-        <li>Include basic information Firebase collects automatically, such as device model, iOS version, app version, country, and language</li>
+        <li>Include basic information Firebase collects automatically, such as device model, system version, app version, and language. Google derives an approximate country or region from the connection; the app never reads your device's location.</li>
     </ul>
-    <p><strong>You can turn analytics off</strong> at any time in Settings &gt; MetadataRemover &gt; Share Anonymous Usage Data. Google's handling of this data is described at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+    <p>Analytics data is kept for 14 months. Google's handling of this data is described at <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a> and <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+    <h2>Crash Reports</h2>
+    <p>If the app crashes or hits an error, a technical report (device model, system version, app version, and where in the app it happened) is sent to <strong>Firebase Crashlytics</strong> (Google LLC) so we can fix it. This applies to iPhone, iPad and Mac. Crash reports never contain your photos, their metadata, file names, your e-mail or your account ID, and are kept for 90 days.</p>
+
+    <h2>Turning Usage Data Off</h2>
+    <p>Usage analytics and crash reports follow one switch, <strong>Share Anonymous Usage Data</strong>, which you can turn off at any time:</p>
+    <ul>
+        <li><strong>iPhone and iPad:</strong> Settings &gt; Apps &gt; MetadataRemover &gt; Share Anonymous Usage Data (on iPad also in the app's Settings)</li>
+        <li><strong>Mac:</strong> MetadataRemover &gt; Settings &gt; Privacy</li>
+    </ul>
+    <p>When it is off, the app sends no usage events and no crash reports, and it does not pass the analytics details described under "Subscriptions and Purchases" to RevenueCat.</p>
+
+    <h2>Subscriptions and Purchases</h2>
+    <p>Purchases are made with Apple's In-App Purchase through the App Store. We do not have access to your payment information. You can manage or cancel subscriptions in your Apple Account settings.</p>
+    <p>To know whether Premium is active and to keep it on your devices, the app uses <strong>RevenueCat</strong> (RevenueCat, Inc.), which processes purchase information on our behalf. RevenueCat receives:</p>
+    <ul>
+        <li>Your <strong>purchase history</strong> in this app (the App Store transaction details: product, dates, renewal status, store country)</li>
+        <li>An <strong>app user ID</strong>: a random ID, or your account ID if you signed in</li>
+        <li>Basic device details (model, system version, app version)</li>
+        <li>If Share Anonymous Usage Data is on: two short labels, which screen opened the subscription offer and the app's language, and, on iPhone and iPad, the Firebase app-instance identifier, so that purchase events (such as a renewal) can be added to our Google Analytics reports</li>
+    </ul>
+    <p>RevenueCat never receives your photos or their metadata. It is used only to verify purchases, keep Premium on your devices, and for sales reports. See the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
+
+    <h2>Optional Account</h2>
+    <p>You can sign in with Apple or Google so Premium follows you to your other devices: on iPhone from Home &gt; "Sync Premium Across Devices", on iPad and Mac from Settings &gt; Account, or from the subscription screen. <strong>It is optional; the app works fully without an account.</strong> Sign-in is handled by <strong>Firebase Authentication</strong> (Google LLC), which stores:</p>
+    <ul>
+        <li>Your <strong>account ID</strong></li>
+        <li>Your <strong>e-mail address</strong> (with Sign in with Apple you can hide it behind Apple's relay address; the app asks Apple for nothing else)</li>
+        <li>For Google accounts, the <strong>name</strong> and profile picture address Google provides</li>
+    </ul>
+    <p>We use them only for signing in and for syncing Premium. Your photos, their metadata and your settings are never stored in the account.</p>
+
+    <h2>What Is Linked to You</h2>
+    <ul>
+        <li><strong>Without an account</strong>, nothing the app sends is tied to your name or e-mail. Purchases are recorded under a random ID.</li>
+        <li><strong>When you are signed in</strong>, your e-mail, name (Google) and account ID identify you, and your RevenueCat record uses your account ID. Your purchase history, the two labels described above and the Firebase app-instance identifier are then held on a record that is linked to your account.</li>
+        <li>Usage events in Google Analytics and crash reports are never sent with your account ID, e-mail or name.</li>
+    </ul>
+
+    <h2 id="delete">Deleting Your Account and Your Data</h2>
+    <ul>
+        <li><strong>In the app:</strong> open the account screen (iPhone: the account row on Home; iPad and Mac: Settings &gt; Account) and choose <strong>Delete Account</strong>. Your account (account ID, e-mail and name) is deleted from Firebase Authentication. For Sign in with Apple, the permission you gave MetadataRemover is revoked as well.</li>
+        <li><strong>Purchase record:</strong> the record RevenueCat holds for your account (purchase history and the labels described above) is <strong>not</strong> deleted automatically when you delete your account. To have it deleted, e-mail <a href="mailto:com.loop.to.infinity@gmail.com">com.loop.to.infinity@gmail.com</a> from the address of your account, or tell us the account you used. We delete it and confirm.</li>
+        <li><strong>If you can't open the app,</strong> e-mail the same address and we delete the account for you. Without an account nothing is held under your name or e-mail.</li>
+        <li>Deleting your account does not cancel a subscription and does not refund a purchase. Your purchase stays restorable on your Apple Account with Restore Purchases; cancel a subscription in your Apple Account settings. Apple keeps its own purchase records under Apple's privacy policy.</li>
+        <li><strong>Usage data</strong> is not tied to your account. Turn the switch off to stop it; analytics data expires after 14 months and crash reports after 90 days.</li>
+    </ul>
 
     <h2>Data Stored on Your Device</h2>
     <p>The app stores the following locally on your device:</p>
     <ul>
         <li><strong>Usage counter:</strong> Tracks daily free tier usage (resets daily)</li>
-        <li><strong>Subscription status:</strong> Managed by Apple's StoreKit</li>
-        <li><strong>Preferences:</strong> Your "What to remove" choices, saved presets, and app settings</li>
+        <li><strong>Premium status:</strong> Whether Premium is active (from Apple's StoreKit and RevenueCat)</li>
+        <li><strong>Preferences:</strong> Your "What to remove" choices, saved presets, and app settings; on the Mac, the folder you chose for saving and the file-name suffix</li>
         <li><strong>Library scan results:</strong> Which photos reveal private information, so the scan doesn't start over</li>
     </ul>
-    <p>This data stays on your device, is shared only between the app and its Share Extension, and is deleted when you uninstall the app.</p>
+    <p>This data stays on your device, is shared only between the app and its own extensions (the Share extension and, on the Mac, the Finder Quick Action), and is deleted when you uninstall the app.</p>
 
-    <h2>Share Extension and Shortcuts</h2>
-    <p>Cleaning photos from the Share sheet or with Shortcuts works the same way: on your device, without uploading anything. These features record anonymous usage events on your device, which the app sends the next time you open it (subject to the analytics setting above).</p>
-
-    <h2>Subscriptions</h2>
-    <p>Premium subscriptions and purchases are processed entirely through Apple's App Store. We do not have access to your payment information. Anonymous analytics record that the subscription screen was shown or that a purchase was completed, without any personal or payment details. Subscription management is handled by Apple in your device Settings.</p>
-    <p>To know whether Premium is active, the app uses <strong>RevenueCat</strong> (RevenueCat, Inc.), which processes purchases on our behalf. RevenueCat receives the App Store purchase receipt, an app user ID (random, or your account ID if you signed in) and basic device details (model, system version, app version, store country). It is used only to verify purchases, keep Premium on your devices and for sales reports. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></p>
-
-    <h2>Optional Account</h2>
-    <p>You can sign in with Apple or Google so Premium follows you to your other iPhone, iPad and Mac. It's optional; the app works the same without it. Sign-in is handled by <strong>Firebase Authentication</strong> (Google LLC), which stores your account ID, your e-mail (Apple lets you hide it behind a relay address) and, for Google accounts, the name and profile picture Google provides. We use them only for signing in and syncing Premium. Your photos and settings are never stored in the account.</p>
-
-    <h2>Deleting Your Account</h2>
-    <p>If you signed in, delete the account in the app: Account → Delete Account. It is removed from Firebase and, for Apple accounts, the permission you gave Metadata Remover is revoked. Your purchase isn't refunded and stays restorable on your Apple Account; cancel a subscription in your Apple Account settings. You can also ask for deletion by e-mail (see Contact Us).</p>
+    <h2>Share Extension, Finder Quick Action and Shortcuts</h2>
+    <p>Cleaning photos from the Share sheet, the Mac's Share menu, the Finder Quick Action or with Shortcuts works the same way: on your device, without uploading anything. On iPhone and iPad these features record usage events on your device, which the app sends the next time you open it (subject to the switch described above).</p>
 
     <h2>Third-Party Services</h2>
     <ul>
-        <li><strong>Apple:</strong> App Store and StoreKit (purchases), PhotoKit (photo access, with your permission), Apple Maps (place names and place search)</li>
-        <li><strong>Google Analytics for Firebase:</strong> Anonymous usage analytics, as described above (iPhone and iPad)</li>
-        <li><strong>RevenueCat:</strong> Purchase verification, as described above</li>
-        <li><strong>Firebase Authentication and Google Sign-In</strong> (Google LLC): Only if you sign in, as described above</li>
+        <li><strong>Apple:</strong> App Store and In-App Purchase, PhotoKit (photo access, with your permission), Apple Maps (place names and place search), Sign in with Apple</li>
+        <li><strong>Google Analytics for Firebase</strong> (Google LLC): Usage analytics, iPhone and iPad only</li>
+        <li><strong>Firebase Crashlytics</strong> (Google LLC): Crash reports</li>
+        <li><strong>Firebase Authentication and Google Sign-In</strong> (Google LLC): Only if you sign in</li>
+        <li><strong>RevenueCat</strong> (RevenueCat, Inc.): Purchase verification and Premium status</li>
     </ul>
-    <p>We do not use advertising networks or sell or share data with data brokers.</p>
+    <p>We do not use advertising networks, and we do not sell your data or share it with data brokers.</p>
 
     <h2>Children's Privacy</h2>
-    <p>The app is rated 4+ and does not knowingly collect personal information from anyone, including children under 13. Usage analytics are anonymous, as described above.</p>
+    <p>The app is rated 4+ and is not directed at children. It does not knowingly collect personal information from children under 13; an account is optional and never needed to use the app.</p>
 
     <h2>Data Security</h2>
-    <p>Your photos and their metadata are never transmitted by the app, so they cannot be exposed through any server of ours. Anonymous analytics are sent over encrypted connections.</p>
+    <p>Your photos and their metadata are never transmitted by the app, and we run no servers of our own. What the app does send (described above) goes over encrypted connections to the services named in this policy.</p>
 
     <h2>Changes to This Policy</h2>
     <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
@@ -116,6 +156,7 @@
 
     <p style="margin-top: 40px; color: #6B7280; font-size: 14px;">
         <a href="support.html">Support</a> ·
+        <a href="terms-of-service.html">Terms of Service</a> ·
         <a href="https://apps.apple.com/app/metadataremover">App Store</a>
     </p>
 </body>
