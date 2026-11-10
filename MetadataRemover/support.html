@@ -38,6 +38,9 @@
             margin-bottom: 0;
             color: #9CA3AF;
         }
+        .faq-item p + p {
+            margin-top: 10px;
+        }
         .tip {
             background-color: #064E3B;
             padding: 15px;
@@ -65,7 +68,7 @@
 
     <div class="faq-item">
         <h3>How do I remove metadata from a photo?</h3>
-        <p>Tap "Select Photo" on the home screen, choose a photo from your library, and you'll see all the metadata. Tap the red "Remove All Metadata" button at the bottom. The cleaned photo can then be saved to your library or shared directly.</p>
+        <p>Tap "Select Photo" on the home screen, choose a photo from your library, and you'll see what it reveals. Tap "Remove All Metadata" at the bottom. The cleaned copy can then be saved to your library or shared directly. On iPad and Mac you can also drag photos onto the app or open them from Files or Finder.</p>
     </div>
 
     <div class="faq-item">
@@ -75,32 +78,60 @@
 
     <div class="faq-item">
         <h3>Are my photos uploaded anywhere?</h3>
-        <p>No. All processing happens entirely on your device. Your photos never leave your iPhone. We cannot see or access your photos in any way.</p>
+        <p>No. All processing happens entirely on your device. Your photos never leave your iPhone, iPad or Mac. We cannot see or access your photos in any way.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Does it work offline?</h3>
+        <p>Yes. Reading and removing metadata needs no internet connection. Offline, the app can't show place names for a photo's location, load subscription options, or sign you in.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Which devices and languages are supported?</h3>
+        <p>iPhone, iPad and Mac. The app is available in English and Hebrew.</p>
     </div>
 
     <div class="faq-item">
         <h3>What's included in the free version?</h3>
-        <p>Free users can view unlimited photo metadata and remove metadata from 1 photo per day. The daily limit resets at midnight local time.</p>
+        <p>Free users can view the privacy report for any photo and remove metadata from 1 photo per day. The daily limit resets at midnight local time and counts per device.</p>
     </div>
 
     <div class="faq-item">
         <h3>What does Premium include?</h3>
-        <p>Premium unlocks unlimited metadata removal and batch processing for up to 20 photos at once. You can choose monthly, yearly, or lifetime subscription options.</p>
+        <p>Premium unlocks unlimited removal, up to 20 photos and videos at once, library clean-up, choosing what to remove, editing metadata, presets, and Shortcuts. You can choose a monthly or yearly subscription or a one-time Lifetime purchase.</p>
     </div>
 
     <div class="faq-item">
         <h3>How do I process multiple photos at once?</h3>
-        <p>Premium subscribers can tap "Select Photos" and choose up to 20 photos. Use the carousel to review each photo's metadata, select which ones to clean, and remove metadata from all selected photos at once.</p>
+        <p>Premium users can tap "Select Photos" and choose up to 20 photos and videos. Review each one, select which to clean, and remove metadata from all selected items at once.</p>
     </div>
 
     <div class="faq-item">
         <h3>How do I restore my purchase?</h3>
-        <p>On the paywall screen, tap "Restore Purchases" at the bottom. If you have an active subscription, it will be restored automatically. Make sure you're signed into the same Apple ID used for the original purchase.</p>
+        <p>On the Premium screen, tap "Restore Purchases". Make sure you're signed in to the same Apple Account used for the original purchase. Purchases made on iPhone also unlock iPad and Mac with the same Apple Account.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>Do I need an account?</h3>
+        <p>No. The app works fully without an account. Signing in with Apple or Google is optional and has one purpose: Premium follows you to your other devices without Restore Purchases, including devices on a different Apple Account.</p>
+        <p>Where: on iPhone, Home &gt; "Sync Premium Across Devices"; on iPad and Mac, Settings &gt; Account. Signing out never removes a purchase made on that device.</p>
+    </div>
+
+    <div class="faq-item" id="delete-account">
+        <h3>How do I delete my account and my data?</h3>
+        <p><strong>In the app:</strong> open the account screen (iPhone: the account row on Home; iPad and Mac: Settings &gt; Account) and choose "Delete Account". Your account (account ID, e-mail and name) is deleted. If you used Sign in with Apple, the app's permission is revoked as well.</p>
+        <p><strong>Purchase record:</strong> the purchase history kept by our purchase service (RevenueCat) for your account is not deleted automatically. To have it deleted too, or if you can't open the app, e-mail <a href="mailto:com.loop.to.infinity@gmail.com">com.loop.to.infinity@gmail.com</a> from the address of your account and we delete it and confirm.</p>
+        <p>Deleting your account does not cancel a subscription or refund a purchase; your purchase stays restorable on your Apple Account. Your photos were never stored by us, so there is nothing to delete there. Details are in the <a href="privacy-policy.html#delete">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How do I turn off usage data and crash reports?</h3>
+        <p>iPhone and iPad: Settings &gt; Apps &gt; MetadataRemover &gt; Share Anonymous Usage Data. Mac: MetadataRemover &gt; Settings &gt; Privacy. They never include your photos or their metadata.</p>
     </div>
 
     <div class="faq-item">
         <h3>How do I cancel my subscription?</h3>
-        <p>Subscriptions are managed through Apple. Go to Settings > [Your Name] > Subscriptions, find MetadataRemover, and tap "Cancel Subscription." You'll retain access until the end of your billing period.</p>
+        <p>Subscriptions are managed through Apple. On iPhone and iPad go to Settings &gt; [Your Name] &gt; Subscriptions; on the Mac, App Store &gt; Account. Find MetadataRemover and cancel. You keep access until the end of the billing period.</p>
     </div>
 
     <div class="faq-item">
@@ -109,8 +140,13 @@
     </div>
 
     <div class="faq-item">
-        <h3>The app says "No Metadata Found" — is my photo already clean?</h3>
-        <p>Yes! If no metadata is detected, your photo doesn't contain removable information. This commonly happens with screenshots, heavily compressed images, or photos that have already been cleaned.</p>
+        <h3>The app says "No Risk Found" — is my photo already clean?</h3>
+        <p>Yes. The photo doesn't reveal personal information. This commonly happens with screenshots, images received through messaging apps, or photos that have already been cleaned.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>How do I report a problem?</h3>
+        <p>E-mail <a href="mailto:com.loop.to.infinity@gmail.com">com.loop.to.infinity@gmail.com</a> with your device, system version, the app version, and what happened. Please don't send photos that contain private information.</p>
     </div>
 
     <div class="tip">
@@ -119,21 +155,22 @@
 
     <h2>System Requirements</h2>
     <ul>
-        <li>iOS 18.0 or later</li>
-        <li>iPhone</li>
-        <li>Photo Library access permission</li>
+        <li>iPhone or iPad with iOS / iPadOS 18.6 or later</li>
+        <li>Mac with macOS 15 or later</li>
+        <li>Photo Library access permission (for photos from your library)</li>
     </ul>
 
     <h2>Subscription Terms</h2>
     <ul>
-        <li><strong>Monthly:</strong> $2.99/month, auto-renews</li>
-        <li><strong>Yearly:</strong> $19.99/year, auto-renews (save 44%)</li>
-        <li><strong>Lifetime:</strong> $39.99 one-time purchase</li>
+        <li><strong>Monthly:</strong> auto-renews every month</li>
+        <li><strong>Yearly:</strong> auto-renews every year</li>
+        <li><strong>Lifetime:</strong> one-time purchase, does not renew</li>
     </ul>
-    <p>Payment is charged to your Apple ID at confirmation. Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. Manage subscriptions in Settings.</p>
+    <p>Prices are shown in the app before you buy and depend on your country. Payment is charged to your Apple Account at confirmation. Subscriptions auto-renew unless cancelled at least 24 hours before the end of the current period. Manage subscriptions in your Apple Account settings. See the <a href="terms-of-service.html">Terms of Service</a>.</p>
 
     <p style="margin-top: 40px; color: #6B7280; font-size: 14px;">
         <a href="privacy-policy.html">Privacy Policy</a> ·
+        <a href="terms-of-service.html">Terms of Service</a> ·
         <a href="https://apps.apple.com/app/metadataremover">App Store</a>
     </p>
 </body>
